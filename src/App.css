@@ -1,0 +1,55 @@
+#root {
+  /*Put the traffic light in the middle*/
+  margin: 0 auto;
+}
+
+/* traffic light box */
+.ctdg-traffic-light {
+  /*Size and color of box*/
+  width: 190px;
+  height: 450px;
+  background-color: black;
+
+  /*Puts the lights and the button in the middle of the traffic box*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* circle */
+.ctdg-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%; /*Makes the square into a cirlce*/
+  opacity: 0.3; /* dim by default and when off */
+}
+
+/*Color of lights
+Color codes based on https://www.schemecolor.com/traffic-red-yellow-green.php#
+*/
+
+.ctdg-traffic-light .red  {
+  background-color: #B81D13;
+}
+
+.ctdg-traffic-light .amber {
+  background-color: #EFB700;
+}
+
+.ctdg-traffic-light .green {
+  background-color: #008450;
+}
+
+/* when light on*/
+.on {
+  opacity: 1;
+}
+
+/* button */
+.ctdg-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
